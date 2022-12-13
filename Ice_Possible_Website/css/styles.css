@@ -1,0 +1,445 @@
+body {
+  background-color: black;
+  /*
+  background-image:url('https://i.gifer.com/N0Mb.gif');
+  */
+  background-size: cover;
+  text-align: center;
+  max-width: 800px;
+  min-height: calc(100vh - 64px - 16px);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  font-family: "vcrfont", sans-serif;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "vcrfont";
+  src: url("../fonts/vcr.ttf") format("truetype");
+}
+
+.header {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding: auto;
+}
+
+footer {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+p {
+  font-family: "vcrfont";
+  font-size: 25px;
+  color: magenta;
+  cursor: auto;
+}
+
+a {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: purple;
+}
+
+/*--------- shop items ------------*/
+
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*
+.featured {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+  padding: 15px;
+}
+*/
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.flex-container > div {
+  width: 170px;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 24px;
+  color: white;
+}
+
+.featured-text {
+  width: fit-content;
+  margin: 100px 0px 15px 0px;
+  font-size: 35px;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+
+/*------------------------------------*/
+
+
+
+
+/*                   SIDEBAR STUFF                */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  left: 50px;
+  top: 50px;
+  position: fixed;
+  /*
+  right: 520px;
+  top: 40px;
+  position: relative;
+  */
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/*        SIDEBAR END        */
+
+
+
+
+/*---------ul, li, li a for nav bar------------------*/
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+.profile {
+
+}
+
+.cart {
+  width: 50px;
+  height: 50px;
+}
+
+.shoppingcart {
+  vertical-align: middle;
+  position: fixed;
+  float: right;
+  top: 50px;
+  right: 125px;
+}
+
+.avatar:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*--------- Change the link color to #111 (black) on hover -----------*/
+li a:hover {
+  background-color: #111;
+}
+
+
+/* OTHER NAV BUTTONS*/
+
+.navbuttons {
+  font-family: "vcrfont";
+  flex-wrap: wrap;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.shopbuttons {
+  font-family: "vcrfont";
+  flex-wrap: wrap;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  margin: 15px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.button1 {
+  color: cyan;
+  font-family: 'vcrfont';
+}
+
+.button1:hover {
+  color: white;
+}
+
+.button2 {
+  color: magenta;
+  font-family: 'vcrfont';
+}
+
+.button2:hover {
+  color: white;
+}
+
+.button3 {
+  color: yellow;
+  font-family: 'vcrfont';
+}
+
+.button3:hover {
+  color: white;
+}
+
+
+/* DROPDOWN INFO */
+.dropbtn {
+  vertical-align: middle;
+  position: fixed;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 50px;
+  right: 50px;
+}
+
+.dropdown {
+  display: inline-block;
+  top: 2px;
+  right: -5px;
+  float: right;
+  position: fixed;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 95px;
+  right: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.show {display: block;}
+
+
+
+
+
+
+
+
+
+/* slide show */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 15px;
+}
+
+
+
+
+.mySlides {
+  display: none;
+  height: 400px;
+  border: solid 1px black;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: cyan;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #222428
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    background-color: #717171
+}
